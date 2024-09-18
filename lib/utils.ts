@@ -75,6 +75,7 @@ export function formatAmount(amount: number): string {
   return formatter.format(amount);
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const parseStringify = (value: any) => JSON.parse(JSON.stringify(value));
 
 export const removeSpecialCharacters = (value: string) => {

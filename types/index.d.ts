@@ -193,6 +193,7 @@ declare interface AuthFormProps {
 
 declare interface BankDropdownProps {
   accounts: Account[];
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   setValue?: UseFormSetValue<any>;
   otherStyles?: string;
 }
@@ -200,6 +201,10 @@ declare interface BankDropdownProps {
 declare interface BankTabItemProps {
   account: Account;
   appwriteItemId?: string;
+}
+
+declare interface DoughnutChartProps {
+  accounts: number[]; // Updated to number[] to match the expected type in DoughnutChart
 }
 
 declare interface TotlaBalanceBoxProps {
