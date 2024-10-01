@@ -203,11 +203,7 @@ declare interface BankTabItemProps {
   appwriteItemId?: string;
 }
 
-declare interface DoughnutChartProps {
-  accounts: number[]; // Updated to number[] to match the expected type in DoughnutChart
-}
-
-declare interface TotlaBalanceBoxProps {
+declare interface TotalBalanceBoxProps {
   accounts: Account[];
   totalBanks: number;
   totalCurrentBalance: number;
